@@ -13,7 +13,7 @@ ENTRY_TEXT = (
     "Thanks for holding me. Goodbye, thumb."
 )
 
-OUTPUT_PATH = "/output/entry.txt"
+OUTPUT_PATH = os.environ.get("MAKEFUN_OUTPUT", "/output/entry.txt")
 
 
 def main() -> None:
